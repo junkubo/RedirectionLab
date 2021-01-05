@@ -52,4 +52,22 @@ public class PigLatin {
     }
     return newstr;
   }
+
+  public static String pigLatinBest(String s) {
+    String newstr = "";
+    if (Character.isLetter(s.charAt(0))) {
+      if (!Character.isLetter(s.charAt(s.length()-1))) {
+        newstr = pigLatin(s.substring(0, s.length()-1)) + s.substring(s.length()-1);
+        return newstr;
+      } else {
+        newstr = pigLatin(s);
+        return newstr;
+      }
+    }
+    else {
+        return s;
+
+    }
+  }
+
 }

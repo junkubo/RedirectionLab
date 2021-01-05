@@ -9,5 +9,15 @@ public class Tester {
     System.out.println(pig.pigLatin("skee"));
     System.out.println(pig.pigLatin("emu"));
     System.out.println(pig.pigLatin("grade"));
+    System.out.println(pig.pigLatinSimple("End  === start pigLatinBest ==="));
+    System.out.println(pig.pigLatinBest("*emu"));
+    System.out.println(pig.pigLatinBest("4chan"));
+    System.out.println(pig.pigLatinBest("fish!"));
+    System.out.println(pig.pigLatinBest("the."));
+    System.out.println(pig.pigLatinBest("cat!"));
+    System.out.println(pig.pigLatinBest("amazing?"));
+    System.out.println(pig.pigLatinBest("apple%"));
+
+
   }
 }
